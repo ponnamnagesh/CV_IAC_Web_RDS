@@ -14,12 +14,12 @@ pipeline {
         stage ("Terraform Init") {
             steps {
                 sh ('cd cv/${Environment}/${component}/')
-                sh ('sudo terraform init') 
+                sh ('sudo -s terraform init') 
             }
         }
         stage ("Terraform Plan") {
             steps {
-                sh ('sudo terraform plan') 
+                sh ('sudo -s terraform plan') 
             }
         }
         stage ("Terraform Action") {
