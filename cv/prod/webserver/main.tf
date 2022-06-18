@@ -10,7 +10,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../../modules/services/webserver-cluster"
+  source = "../../../../modules/services/webservercluster"
 
   ami         = "ami-0c55b159cbfafe1f0"
 
