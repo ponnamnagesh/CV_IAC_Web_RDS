@@ -19,7 +19,7 @@ pipeline {
         }
         stage ("Terraform Plan") {
             steps {
-                sh ('sudo -s terraform plan') 
+                sh ('terraform plan') 
             }
         }
         stage ("Terraform Action") {
