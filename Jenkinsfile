@@ -14,7 +14,7 @@ pipeline {
         stage ("Terraform Init") {
             steps {
                 sh ('cd /var/lib/jenkins/workspace/CV_IAC_WEB_RDS/cv/${Environment}/${component}/')
-                sh ('terraform init') 
+                sh ('sudo terraform init') 
             }
         }
         stage ("Terraform Plan") {
