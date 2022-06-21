@@ -35,3 +35,10 @@ resource "aws_security_group_rule" "allow_testing_inbound" {
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 }
+terraform {
+  backend "s3" {
+    bucket = "cvdevenv"
+    key    = "path/to/my/key"
+    region = "us-east-2"
+  }
+}
