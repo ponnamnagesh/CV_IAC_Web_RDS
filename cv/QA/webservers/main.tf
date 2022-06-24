@@ -11,7 +11,7 @@ provider "aws" {
 
 module "webserver_cluster" {
   #source = "../../../../modules/services/webservercluster"
-  source = "github.com/ponnamnagesh/CV_IAC_Web_RDS/tree/main/modules/services/webservercluster"
+  source = "github.com/ponnamnagesh/CV_IAC_Web_RDS/main/modules/services/webservercluster"
 
   ami         = "ami-0c55b159cbfafe1f0"
 
