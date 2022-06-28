@@ -146,7 +146,7 @@ resource "aws_security_group" "alb" {
 }
 terraform {
   backend "s3" {
-    bucket = "cvdevenv"
+    bucket = "great-name-terraform-state-2222"
     key    = "path/to/my/key"
     region = "us-east-2"
   }
